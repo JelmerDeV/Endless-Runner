@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class playerMovement : MonoBehaviour {
-	public float speed = 1;
+	public float speed = 5;
 	public float speedL = 0;
 	public float speedR = 0;
 	public float maxSpeed = 5;
