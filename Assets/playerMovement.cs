@@ -14,7 +14,7 @@ public class playerMovement : MonoBehaviour {
 
 
 	void Update () {
-		Debug.Log (speedL);
+		//Debug.Log (speedL);
 		transform.Translate(Vector3.forward * Time.deltaTime * speed);
 		transform.Translate(Vector3.left * Time.deltaTime * speedL);
 		transform.Translate(Vector3.right * Time.deltaTime * speedR);
