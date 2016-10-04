@@ -5,7 +5,7 @@ public class TileController : MonoBehaviour {
 
 
     public GameObject tilePrefab;
-    float time = 2f;
+    float time = 2.1f;
     Vector3 forward = new Vector3(0, 0, 113.6f);
 
 
@@ -19,7 +19,7 @@ public class TileController : MonoBehaviour {
         time -= Time.deltaTime;
         if (time <= 0)
         {
-            time = 2;
+            time = 2.1f;
             Spawn();
         }
     }
