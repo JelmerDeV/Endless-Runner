@@ -28,3 +28,47 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Assets/arduino.unity
+
+Assets/arduino.unity.meta
+
+Assets/arduinoUno.cs
+
+Assets/PlaneSpawner.cs
+
+Assets/PlaneSpawner.cs
+
+Assets/arduinoUno.cs.meta
+
+Assets/playerMovement_.cs.meta
+
+Assets/TileController.cs.meta
+
+Assets/prefabs/plane.prefab.meta
+
+Assets/Tile prefabs/Plane.prefab.meta
+
+Assets/Tile prefabs/SpawnPlace.prefab.meta
+
+Assets/PlaneSpawner.cs.meta
+
+Assets/playerMovement_.cs
+
+Assets/playerMovement.cs.meta
+
+Assets/prefabs/plane.prefab
+
+Assets/SpawnerMovement.cs
+
+Assets/Tile prefabs.meta
+
+Assets/Tile prefabs/Plane.prefab
+
+Assets/Tile prefabs/SpawnPlace.prefab
+
+Assets/TileController.cs
+
+Assets/Untitled.unity
+
+ProjectSettings/GraphicsSettings.asset
