@@ -5,7 +5,7 @@ public class TileController : MonoBehaviour {
 
 
     public GameObject tilePrefab;
-    float time = 1f;
+    public float time = 2f;
     Vector3 forward = new Vector3(0, 0, 113.6f);
 
 
@@ -19,7 +19,7 @@ public class TileController : MonoBehaviour {
         time -= Time.deltaTime;
         if (time <= 0)
         {
-            time = 1;
+            time = 2f;
             Spawn();
         }
     }
@@ -35,7 +35,7 @@ public class TileController : MonoBehaviour {
 	void Update ()
     {
         Timer();
-        Debug.Log(time);
+        //Debug.Log(time);
         // 113.6 IS DE AFSTAND TUSSEN DE TILES>>>>>>>>
         // 96.9 EERSTE Z WAARDE EERSTE TILE NA DE ORGINELE
 	}
