@@ -72,3 +72,5 @@ Assets/TileController.cs
 Assets/Untitled.unity
 
 ProjectSettings/GraphicsSettings.asset
+Assets/Game Scene.unity.meta
+*.meta
