@@ -5,14 +5,9 @@ public class TileController : MonoBehaviour {
 
 
     public GameObject tilePrefab;
-    public float time = 2f;
+    public float time = 1f;
     Vector3 forward = new Vector3(0, 0, 113.6f);
 
-
-	void Start ()
-    {
-       
-    }
 	
     void Timer()
     {
