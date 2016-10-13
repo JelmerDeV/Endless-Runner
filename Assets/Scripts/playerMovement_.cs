@@ -11,10 +11,12 @@ public class playerMovement_ : MonoBehaviour
     private int angle;
     private bool Left = false;
     private bool Right = false;
+    public bool hit = false;
+    public menuScriptInGame pause;
 
     void Start()
     {
-
+        pause = pause.GetComponent<menuScriptInGame>();
     }
 
 
@@ -31,7 +33,7 @@ public class playerMovement_ : MonoBehaviour
         }
 
 
-        if (speed < maxSpeed)
+        if (speed < maxSpeed && !pause.inGameMenu.enabled && !hit)
         {
             speed += 0.02f;
             Debug.Log(speed);
@@ -121,6 +123,7 @@ public class playerMovement_ : MonoBehaviour
         if (other.tag == "Obst")
         {
             angle = Random.Range(0, 2);
+            hit = true;
             switch (angle)
             {
                 case 0:
