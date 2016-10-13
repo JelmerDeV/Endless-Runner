@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class menuScriptInGame : MonoBehaviour {
@@ -7,8 +8,12 @@ public class menuScriptInGame : MonoBehaviour {
     public Canvas inGameMenu;
     public Button pressYes;
     public Button pressNo;
-   // public Button pressHome;
+    // public Button pressHome;
+    public Canvas retryMenu;
+    public playerMovement_ player;
     public bool keyPress = false;
+    public scoreCount endScore;
+    public Text endScoreText;
 
 
 	// Use this for initialization
@@ -17,6 +22,11 @@ public class menuScriptInGame : MonoBehaviour {
         pressYes = pressYes.GetComponent<Button>();
         pressNo = pressNo.GetComponent<Button>();
         inGameMenu = inGameMenu.GetComponent<Canvas>();
+        retryMenu = retryMenu.GetComponent<Canvas>();
+        player = player.GetComponent<playerMovement_>();
+        endScore = endScore.GetComponent<scoreCount>();
+        endScoreText = endScoreText.GetComponent<Text>();
+        retryMenu.enabled = false;
         inGameMenu.enabled = false;
         pressYes.enabled = false;
         pressNo.enabled = false;
@@ -42,6 +52,12 @@ public class menuScriptInGame : MonoBehaviour {
             inGameMenu.enabled = false;
             keyPress = false;
         }
+        if (player.hit)
+        {
+            retryMenu.enabled = true;
+            endScoreText.text = ("Final Score: " + Mathf.Floor(endScore.countScore / 100) + "M");
+
+        }
 
 
     }
@@ -64,6 +80,11 @@ public class menuScriptInGame : MonoBehaviour {
     public void onQuitClick()
     {
         Application.Quit();
+    }
+    public void retryPress()
+    {
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
 
 }

@@ -7,7 +7,7 @@ public class scoreCount : MonoBehaviour {
     public Text score;
     public playerMovement_ player;
     public menuScriptInGame pause;
-    float countScore = 0;
+    public float countScore = 0;
 
 
 	

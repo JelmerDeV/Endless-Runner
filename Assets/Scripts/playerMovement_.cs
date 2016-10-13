@@ -13,10 +13,12 @@ public class playerMovement_ : MonoBehaviour
     private bool Right = false;
     public bool hit = false;
     public menuScriptInGame pause;
+    public scoreCount score;
 
     void Start()
     {
         pause = pause.GetComponent<menuScriptInGame>();
+        score = score.GetComponent<scoreCount>();
     }
 
 
@@ -124,6 +126,7 @@ public class playerMovement_ : MonoBehaviour
         {
             angle = Random.Range(0, 2);
             hit = true;
+            score.score.enabled = false;
             switch (angle)
             {
                 case 0:
