@@ -19,7 +19,7 @@ public class scoreCount : MonoBehaviour {
 	
 	
 	void Update () {
-        Debug.Log(pause.pressHome.enabled);
+
         if (!player.hit && !pause.inGameMenu.enabled) 
         {
             countScore += player.speed;
