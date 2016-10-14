@@ -36,7 +36,7 @@ public class playerMovement_ : MonoBehaviour
         if (speed < maxSpeed && !pause.inGameMenu.enabled && !hit)
         {
             speed += 0.02f;
-            Debug.Log(speed);
+            //Debug.Log(speed);
         }
         if (speedL < 0)
         {

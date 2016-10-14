@@ -8,7 +8,13 @@ public class TileController : MonoBehaviour {
     public float time = 1f;
     Vector3 forward = new Vector3(0, 0, 113.6f);
 
-	
+
+
+	void Start(){
+		Spawn ();
+
+	}
+
     void Timer()
     {
         time -= Time.deltaTime;
