@@ -13,4 +13,10 @@ public class SpawnerMovement : MonoBehaviour {
 		_spawnerSpeed = GameObject.Find("Player").GetComponent<playerMovement_>().speed;
 		transform.Translate(Vector3.forward * Time.deltaTime * _spawnerSpeed);
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.tag == "Obst") {
+			Destroy (other.gameObject);
+		}
+	}
 }
